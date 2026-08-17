@@ -28,12 +28,12 @@ jobs:
                 echo "Variable value: ${{vars.MY_VAR}}"
             - name: Print Variables
               env:
-                MY:OVERWRITTEN_VAR: 'step' 
+                MY_OVERWRITTEN_VAR: 'step' 
               run: |
-                echo: "Workflow env: ${{env.MY_WORKFLOW_VAR}}"
-                echo: "Overwritten env: ${{env.MY_OVERWRITTEN_VAR}}"
+                echo "Workflow env: ${{env.MY_WORKFLOW_VAR}}"
+                echo "Overwritten env: ${{env.MY_OVERWRITTEN_VAR}}"
             - name: Print Variables
               run: |
-                echo: "Workflow env: ${{env.MY_WORKFLOW_VAR}}"
-                echo: "Overwritten env: ${{env.MY_OVERWRITTEN_VAR}}"
+                echo "Workflow env: ${{env.MY_WORKFLOW_VAR}}"
+                echo "Overwritten env: ${{env.MY_OVERWRITTEN_VAR}}"
                 

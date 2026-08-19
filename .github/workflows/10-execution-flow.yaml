@@ -50,5 +50,4 @@ jobs:
             - load-tests
         steps:
             - name: Deploying to prod
-              run: echo "Deploying to Prod..."      
-              
+              run: echo "Deploying to Prod..."
